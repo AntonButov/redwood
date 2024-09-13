@@ -41,7 +41,7 @@ import platform.UIKit.UIEdgeInsetsMake
 import platform.UIKit.UIView
 import platform.darwin.NSInteger
 
-internal class UIViewBox : Box<UIView> {
+internal class UIViewBox : Box<UIView>() {
   override val value: View = View()
 
   override var modifier: Modifier = Modifier

@@ -242,8 +242,8 @@ internal fun generateProtocolWidget(
     addType(
       TypeSpec.classBuilder(type)
         .addModifiers(INTERNAL)
+        .superclass(widgetName.parameterizedBy(protocolViewType))
         .addSuperinterface(ProtocolGuest.ProtocolWidget)
-        .addSuperinterface(widgetName.parameterizedBy(protocolViewType))
         .addAnnotation(Redwood.RedwoodCodegenApi)
         .primaryConstructor(
           FunSpec.constructorBuilder()
