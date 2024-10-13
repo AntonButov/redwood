@@ -1,0 +1,23 @@
+import static app.cash.redwood.buildsupport.TargetGroup.Common
+
+redwoodBuild {
+  targets(Common)
+  publishing()
+}
+
+apply plugin: 'app.cash.redwood.generator.widget'
+
+kotlin {
+  sourceSets {
+    commonMain {
+      dependencies {
+        api projects.redwoodLayoutModifiers
+      }
+    }
+  }
+}
+
+redwoodSchema {
+  source = projects.redwoodLayoutSchema
+  type = 'app.cash.redwood.layout.RedwoodLayout'
+}

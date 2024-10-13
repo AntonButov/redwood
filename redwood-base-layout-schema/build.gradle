@@ -1,0 +1,16 @@
+import static app.cash.redwood.buildsupport.TargetGroup.Tooling
+
+redwoodBuild {
+  targets(Tooling)
+  publishing()
+}
+
+apply plugin: 'app.cash.redwood.schema'
+
+dependencies {
+  api projects.redwoodLayoutApi
+}
+
+redwoodSchema {
+  type = 'app.cash.redwood.layout.RedwoodLayout'
+}
