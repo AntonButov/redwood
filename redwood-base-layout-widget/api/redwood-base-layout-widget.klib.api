@@ -5,7 +5,7 @@
 // - Show manifest properties: true
 // - Show declarations: true
 
-// Library unique name: <app.cash.redwood:redwood-layout-widget>
+// Library unique name: <app.cash.redwood:redwood-base-layout-widget>
 abstract interface <#A: kotlin/Any> app.cash.redwood.layout.widget/Box : app.cash.redwood.widget/Widget<#A> { // app.cash.redwood.layout.widget/Box|null[0]
     abstract val children // app.cash.redwood.layout.widget/Box.children|{}children[0]
         abstract fun <get-children>(): app.cash.redwood.widget/Widget.Children<#A> // app.cash.redwood.layout.widget/Box.children.<get-children>|<get-children>(){}[0]

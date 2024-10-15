@@ -5,7 +5,7 @@
 // - Show manifest properties: true
 // - Show declarations: true
 
-// Library unique name: <app.cash.redwood:redwood-layout-modifiers>
+// Library unique name: <app.cash.redwood:redwood-base-layout-modifiers>
 abstract interface app.cash.redwood.layout.modifier/Flex : app.cash.redwood/Modifier.ScopedElement { // app.cash.redwood.layout.modifier/Flex|null[0]
     abstract val value // app.cash.redwood.layout.modifier/Flex.value|{}value[0]
         abstract fun <get-value>(): kotlin/Double // app.cash.redwood.layout.modifier/Flex.value.<get-value>|<get-value>(){}[0]

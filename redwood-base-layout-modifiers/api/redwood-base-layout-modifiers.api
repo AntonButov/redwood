@@ -1,4 +1,4 @@
-  public abstract interface class app/cash/redwood/layout/modifier/Flex : app/cash/redwood/Modifier$ScopedElement {
+public abstract interface class app/cash/redwood/layout/modifier/Flex : app/cash/redwood/Modifier$ScopedElement {
 	public abstract fun getValue ()D
 }
 
