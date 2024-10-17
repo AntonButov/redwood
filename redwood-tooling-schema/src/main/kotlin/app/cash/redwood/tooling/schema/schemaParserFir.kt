@@ -195,6 +195,9 @@ public fun parseProtocolSchema(
 
   val firContext = FirContext(types, firSession)
 
+  println("types = $types")
+  println("type = $type")
+
   val schema = firContext.parseSchema(type)
 
   disposable.dispose()

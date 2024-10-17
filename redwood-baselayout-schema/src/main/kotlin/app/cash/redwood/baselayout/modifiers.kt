@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2022 Square, Inc.
+ * Copyright (C) 2024 Square, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,30 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package app.cash.redwood.layout
+package app.cash.redwood.baselayout
 
-import app.cash.redwood.schema.Schema
+import app.cash.redwood.schema.Modifier
 
-@Schema(
-  [
-    // Widgets
-    Box::class,
-    Column::class,
-    Row::class,
-    Spacer::class,
-    // Next tag: 5
-
-    // Modifiers
-    Flex::class,
-    Grow::class,
-    Height::class,
-    HorizontalAlignment::class,
-    Margin::class,
-    Shrink::class,
-    Size::class,
-    VerticalAlignment::class,
-    Width::class,
-    // Next tag: 10
-  ],
+@Modifier(1)
+public data class BackgroundColor(
+  /** Expects argb format: `0xAARRGGBBu`. */
+  val color: UInt,
 )
-public interface RedwoodLayout
