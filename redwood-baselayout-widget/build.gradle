@@ -11,13 +11,13 @@ kotlin {
   sourceSets {
     commonMain {
       dependencies {
-        api projects.redwoodLayoutModifiers
+        api projects.redwoodBaselayoutModifiers
       }
     }
   }
 }
 
 redwoodSchema {
-  source = projects.redwoodLayoutSchema
+  source = projects.redwoodBaselayoutSchema
   type = 'app.cash.redwood.baselayout.RedwoodBaseLayout'
 }
