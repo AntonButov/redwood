@@ -8,9 +8,9 @@ redwoodBuild {
 apply plugin: 'app.cash.redwood.schema'
 
 dependencies {
-  api projects.redwoodLayoutApi
+  api projects.redwoodBaselayoutApi
 }
 
 redwoodSchema {
-  type = 'app.cash.redwood.layout.RedwoodLayout'
+  type = 'app.cash.redwood.baselayout.RedwoodBaseLayout'
 }

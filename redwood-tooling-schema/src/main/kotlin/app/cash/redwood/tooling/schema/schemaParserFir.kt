@@ -105,6 +105,7 @@ public fun parseSchema(
   dependencies: Collection<File>,
   type: FqType,
 ): SchemaSet {
+  println("parse Schema type = $type")
   return parseProtocolSchema(javaHome, sources, dependencies, type)
 }
 

@@ -5,7 +5,7 @@
 // - Show manifest properties: true
 // - Show declarations: true
 
-// Library unique name: <app.cash.redwood:redwood-base-layout-api>
+// Library unique name: <app.cash.redwood:redwood-baselayout-api>
 final value class app.cash.redwood.layout.api/Constraint { // app.cash.redwood.layout.api/Constraint|null[0]
     final fun equals(kotlin/Any?): kotlin/Boolean // app.cash.redwood.layout.api/Constraint.equals|equals(kotlin.Any?){}[0]
     final fun hashCode(): kotlin/Int // app.cash.redwood.layout.api/Constraint.hashCode|hashCode(){}[0]

@@ -51,6 +51,7 @@ internal fun loadProtocolSchema(
   val tagOffset = tag * MAX_MEMBER_TAG
 
   val path = ParsedProtocolSchema.toEmbeddedPath(type)
+  println("path = $path")
   val schema = classLoader
     .getResourceAsStream(path)
     ?.use(InputStream::readBytes)
