@@ -25,7 +25,8 @@ interface AbstractTextTest<T : Any> {
 
   fun snapshotter(widget: T): Snapshotter
 
-  @Test fun showText(text: String) {
+  @Test
+  fun testText(text: String) {
     val widget = widget()
     widget.text(text)
     snapshotter(widget.value).snapshot()

@@ -19,7 +19,6 @@ import android.content.Context
 import android.view.Gravity
 import android.view.View
 import android.widget.TextView
-import app.cash.burst.Burst
 import app.cash.paparazzi.DeviceConfig
 import app.cash.paparazzi.Paparazzi
 import app.cash.redwood.Modifier
@@ -31,8 +30,10 @@ import app.cash.redwood.ui.Density
 import app.cash.redwood.ui.Dp
 import com.android.ide.common.rendering.api.SessionParams
 import org.junit.Rule
+import org.junit.runner.RunWith
+import org.junit.runners.JUnit4
 
-@Burst
+@RunWith(JUnit4::class)
 class TextTest : AbstractTextTest<View> {
 
   @get:Rule
@@ -43,7 +44,6 @@ class TextTest : AbstractTextTest<View> {
   )
 
   override fun widget(): Text<View> = ViewText(paparazzi.context)
-
 
   override fun snapshotter(widget: View) = ViewSnapshotter(paparazzi, widget)
 }
