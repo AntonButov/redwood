@@ -13,11 +13,13 @@ public abstract interface class app/cash/redwood/baselayout/RedwoodBaseLayout {
 }
 
 public final class app/cash/redwood/baselayout/Text {
-	public fun <init> (Ljava/lang/String;)V
+	public fun <init> (Ljava/lang/String;I)V
 	public final fun component1 ()Ljava/lang/String;
-	public final fun copy (Ljava/lang/String;)Lapp/cash/redwood/baselayout/Text;
-	public static synthetic fun copy$default (Lapp/cash/redwood/baselayout/Text;Ljava/lang/String;ILjava/lang/Object;)Lapp/cash/redwood/baselayout/Text;
+	public final fun component2 ()I
+	public final fun copy (Ljava/lang/String;I)Lapp/cash/redwood/baselayout/Text;
+	public static synthetic fun copy$default (Lapp/cash/redwood/baselayout/Text;Ljava/lang/String;IILjava/lang/Object;)Lapp/cash/redwood/baselayout/Text;
 	public fun equals (Ljava/lang/Object;)Z
+	public final fun getColor ()I
 	public final fun getText ()Ljava/lang/String;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;

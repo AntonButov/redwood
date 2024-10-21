@@ -31,5 +31,4 @@ interface AbstractTextTest<T : Any> {
     widget.text(text)
     snapshotter(widget.value).snapshot()
   }
-
 }

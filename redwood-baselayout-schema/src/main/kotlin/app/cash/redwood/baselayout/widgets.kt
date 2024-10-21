@@ -21,5 +21,5 @@ import app.cash.redwood.schema.Widget
 @Widget(1)
 public data class Text(
   @Property(1) val text: String?,
-  @Property(2) val color: Int
+  @Property(2) val color: Int,
 )

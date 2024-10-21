@@ -1,6 +1,7 @@
 <schema version="1" type="app.cash.redwood.baselayout.RedwoodBaseLayout">
   <widget tag="1" type="app.cash.redwood.baselayout.Text">
     <property tag="1" name="text" type="kotlin.String?"/>
+    <property tag="2" name="color" type="kotlin.Int"/>
   </widget>
   <modifier tag="1" type="app.cash.redwood.baselayout.BackgroundColor">
     <property name="color" type="kotlin.UInt"/>
