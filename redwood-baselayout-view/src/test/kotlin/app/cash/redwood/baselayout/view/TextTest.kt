@@ -30,10 +30,7 @@ import app.cash.redwood.ui.Density
 import app.cash.redwood.ui.Dp
 import com.android.ide.common.rendering.api.SessionParams
 import org.junit.Rule
-import org.junit.runner.RunWith
-import org.junit.runners.JUnit4
 
-@RunWith(JUnit4::class)
 class TextTest : AbstractTextTest<View> {
 
   @get:Rule
