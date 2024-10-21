@@ -19,21 +19,20 @@ import android.content.Context
 import android.view.Gravity
 import android.view.View
 import android.widget.TextView
+import app.cash.burst.Burst
 import app.cash.paparazzi.DeviceConfig
 import app.cash.paparazzi.Paparazzi
 import app.cash.redwood.Modifier
+import app.cash.redwood.baselayout.AbstractTextTest
 import app.cash.redwood.baselayout.widget.Text
-import app.cash.redwood.layout.AbstractTextTest
 import app.cash.redwood.snapshot.testing.Color
 import app.cash.redwood.snapshot.testing.ViewSnapshotter
 import app.cash.redwood.ui.Density
 import app.cash.redwood.ui.Dp
 import com.android.ide.common.rendering.api.SessionParams
 import org.junit.Rule
-import org.junit.runner.RunWith
-import org.junit.runners.JUnit4
 
-@RunWith(JUnit4::class)
+@Burst
 class TextTest : AbstractTextTest<View> {
 
   @get:Rule

@@ -21,14 +21,14 @@ dependencies {
 android {
   namespace 'app.cash.redwood.layout.view'
 
-  def composeHelpers = redwoodBuild.generateComposeHelpers(tasks, 'app.cash.redwood.layout.view').get()
-  def flexboxHelpers = redwoodBuild.generateFlexboxHelpers(tasks, 'app.cash.redwood.layout.view').get()
+ // def composeHelpers = redwoodBuild.generateComposeHelpers(tasks, 'app.cash.redwood.layout.view').get()
+ // def flexboxHelpers = redwoodBuild.generateFlexboxHelpers(tasks, 'app.cash.redwood.layout.view').get()
   // TODO Should be able to do `sourceSets.main.kotlin.srcDir(helpers)`.
   //  https://issuetracker.google.com/issues/249468390
-  libraryVariants.all { variant ->
-    variant.registerJavaGeneratingTask(composeHelpers, composeHelpers.outputDirectory.get().asFile)
-    variant.registerJavaGeneratingTask(flexboxHelpers, flexboxHelpers.outputDirectory.get().asFile)
-  }
+//  libraryVariants.all { variant ->
+ //   variant.registerJavaGeneratingTask(composeHelpers, composeHelpers.outputDirectory.get().asFile)
+ //   variant.registerJavaGeneratingTask(flexboxHelpers, flexboxHelpers.outputDirectory.get().asFile)
+ // }
 
   buildFeatures {
     // For Paparazzi, which internally uses resources to set itself up.
